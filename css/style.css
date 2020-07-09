@@ -5,6 +5,13 @@
     list-style: none;
 }
 
+:root{
+    --mainBlack: #000;
+    --mainWhite: #fff;
+    --yellowTrans: rgb(141, 139, 9);
+    --mainYellow: rgb(238, 215, 8);
+}
+
 body{
     font-family: 'Montserrat', sans-serif;
 }
@@ -12,7 +19,7 @@ body{
 nav.nav{
     height: 80px;
     width: 100%;
-    background: #34964e;
+    background: var(--yellowTrans);
 }
 
 label.logo{
