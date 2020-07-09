@@ -51,10 +51,11 @@ nav.nav a{
     border-radius: 3px;
 }
 
-a.active, a:hover{
-    border: 1px solid white;
-    transition: .5s;
-
+.nav-list-link:hover{
+    text-decoration: none;
+    border: 1px solid var(--mainWhite);
+    color: var(--mainBlack);
+    transition: all 0.5s ease-in-out;
 }
 
 nav #icon{
@@ -138,7 +139,9 @@ nav #icon{
 
 .footer-link:hover{
     text-decoration: none;
-    color: var(--mainBlack)
+    color: var(--mainBlack);
+    border: 1px solid var(--mainWhite);
+    transition: all 0.5s ease-in-out;
 }
 
 .social-list{
@@ -160,5 +163,7 @@ nav #icon{
 .social-list-link:hover{
     text-decoration: none;
     color:var(--mainBlack);
+    transition: all 0.5s ease-in-out;
+    border: 1px solid var(--mainWhite);
 }
 
