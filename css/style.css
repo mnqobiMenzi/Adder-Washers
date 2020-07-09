@@ -116,3 +116,49 @@ nav #icon{
         left: 0;
     }
 }
+
+
+/* footer */
+.footer{
+    background-color: var(--yellowTrans);
+    color: var(--mainBlack);
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: 35px;
+}
+
+.footer a{
+    text-decoration: none;
+    color:white;
+}
+
+.footer-link{
+    font-weight: bold;
+}
+
+.footer-link:hover{
+    text-decoration: none;
+    color: var(--mainBlack)
+}
+
+.social-list{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 2em;
+    padding: 0;
+}
+
+.social-list-item{
+    margin: 0 .5em;
+}
+
+.social-list-link{
+    padding:  .5em;
+}
+
+.social-list-link:hover{
+    text-decoration: none;
+    color:var(--mainBlack);
+}
+
