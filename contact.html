@@ -17,7 +17,7 @@
     <header>
         <!-- navbar -->
         <nav class="nav">
-            <label class="logo">logo goes here</label>
+            <label class="logo"><a href="index.html"><img src="/img/logo.ico" alt="logo"></a></label>
             <ul>
                 <li><a href="index.html" class="nav-list-link">Home</a></li>
                 <li><a href="about.html" class="nav-list-link">About</a></li>
@@ -30,6 +30,64 @@
             </label>
         </nav>
     </header>
+    <section id="contact">
+        <div class="container">
+            <div class="contact-header">
+                <h2 class="contact-header">Contact Us</h2>
+                <p class="contact-paragraph">Company Contact Details</p>
+            </div>
+
+            <div class="row contact-info">
+                <div class="col-md-4">
+                    <div class="contact-address">
+                        <i class="ios-ios-location-outline"></i>
+                        <h3>Address</h3>
+                        <address>63 Diakonia Avenue, Durban 40001, SA</address>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-phone">
+                        <i class="ios-ios-telephone-outline"></i>
+                        <h3>Phone Number</h3>
+                        <p><a href="tel:+27735072298">+27 73507 2298</a></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-email">
+                        <i class="ios-ios-telephone-outline"></i>
+                        <h3>Email</h3>
+                        <p><a href="mailto:infor@example.com">infor@example.com</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form">
+                <div id="sendmessage">Your Message has been sent. Thank you</div>
+                <div id="errormessage"></div>
+                <form action="" method="post" role="form" class="contactForm">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Your Email" data-rule="minlen:4" data-msg="Please enter a valid email" />
+                            <div class="validation"></div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars for the subject">
+                        <div class="validation"></div>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" id="message" cols="152" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="message"></textarea>
+                        <div class="validation"></div>
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+            </div>
+        </div>
+    </section>
     <!-- footer -->
     <footer class="footer">
         <a href="mailto:andilemlambo98@gmail.com" class="footer-link">andilemlambo98@gmail.com</a>
