@@ -346,6 +346,10 @@ nav #icon {
     background: var(--mainYellow);
 }
 
+#contact .form textarea {
+    width: 100%;
+}
+
 
 /* footer */
 
