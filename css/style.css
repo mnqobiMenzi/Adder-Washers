@@ -242,6 +242,19 @@ nav #icon {
 }
 
 
+/* About Page */
+
+.about-content {
+    padding: 200px 200px;
+    background-color: var(--yellowTrans);
+    background-image: url(../img/wash.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: var(--mainWhite);
+    margin-bottom: 2em;
+}
+
+
 /* contact us */
 
 #contact {
