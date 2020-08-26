@@ -12,6 +12,10 @@
     --mainYellow: rgb(238, 215, 8);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
