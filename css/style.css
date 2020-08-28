@@ -239,6 +239,7 @@ nav #icon {
 
 .service-info img {
     width: 100%;
+    height: 300px;
 }
 
 
@@ -385,7 +386,7 @@ nav #icon {
     /* Remove borders */
     outline: none;
     /* Remove outline */
-    background-color: var(--mainYellow);
+    background-color: var(--yellowTrans);
     /* Set a background color */
     color: white;
     /* Text color */
@@ -447,4 +448,49 @@ nav #icon {
     color: var(--mainBlack);
     transition: all 0.5s ease-in-out;
     border: 1px solid var(--mainWhite);
+}
+
+
+/* service button */
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.service-iimg {
+    transition: all 1s ease-in-out;
+}
+
+.img-container:hover .service-iimg {
+    transform: scale(1.2);
+}
+
+.service-item-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 0.75rem;
+    background: rgb(148, 148, 230);
+    border-top-left-radius: 1rem;
+    transition: all 1s ease-in-out;
+    transform: translate(100%, 100%);
+}
+
+.img-container:hover .service-item-icon {
+    transform: translate(0, 0);
+}
+
+.service-item-icon:hover {
+    color: var(--mainWhite);
+}
+
+.service-text {
+    padding-top: 100px;
+}
+
+.our-service-text {
+    color: var(--yellowTrans);
+    font-family: 'Trade Winds', cursive;
 }

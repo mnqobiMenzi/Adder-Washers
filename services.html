@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ader Washers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -13,6 +14,7 @@
 </head>
 
 <body>
+    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fa fa-arrow-alt-circle-up"></i></button>
     <!-- header -->
     <header>
         <!-- navbar -->
@@ -31,23 +33,26 @@
         </nav>
     </header>
     <!-- Services Section -->
-    <section id="store" class="store py-5">
+    <section id="services" class="services py-5">
         <div class="service-text">
-            <p>text goes here</p>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-10 mx-auto col-sm-6 text-center">
-                    <h1 class="text-capitalize">Our <strong class="banner-title ">Services</strong></h1>
+                    <h1 class="text-capitalize"><strong class="our-service-text">Our Services</strong></h1>
                 </div>
             </div>
             <div class="row">
                 <div class=" col-lg-8 mx-auto d-flex justify-content-around my-2 sortBtn flex-wrap">
-                    <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="all"> Full Wash</a>
-                    <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cakes">Blow Wash</a>
-                    <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="cupcakes">Wind Screen Wash</a>
-                    <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="sweets">sweets</a>
-                    <a href="#" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2" data-filter="doughnuts">doughnuts</a>
+                    <a href="#service01" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btn-se" data-filter="all"> Full Service</a>
+                    <a href="#service02" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btn-se" data-filter="cakes">Super Shine</a>
+                    <a href="#service03" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btn-se" data-filter="cupcakes">Interior Wash</a>
+                    <a href="#service04" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btn-se" data-filter="sweets">Interior Plus</a>
+                    <a href="#service05" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btn-se" data-filter="doughnuts">Express Exterior</a>
+                    <a href="#service06" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btn-se" data-filter="doughnuts">Wheel Wash</a>
+                    <a href="#service07" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btn-se" data-filter="doughnuts">Exterior Super Shine</a>
+                    <a href="#service08" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btn-se" data-filter="doughnuts">Exterior Wash</a>
+                    <a href="#service09" class="btn btn-outline-secondary btn-black text-uppercase filter-btn m-2 btn-se" data-filter="doughnuts">Exterior Wash Plus</a>
                 </div>
             </div>
             <div class="row">
@@ -58,21 +63,25 @@
                             <div class="input-group-prepend ">
                                 <span class="input-group-text search-box" id="search-icon"><i class="fas fa-search"></i></span>
                             </div>
+                            <input type="text" class="form-control" placeholder="Service Name" id="search-item">
                         </div>
 
                     </form>
                 </div>
             </div>
-            <div class="row store-items" id="store-items">
-                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 store-item sweets" data-item="sweets">
+            <div class="row servie-items">
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 service-item sweets" data-item="sweets">
                     <div class="card ">
-                        <div class="img-container">
-                            <img src="img/wash.jpg" class="card-img-top store-img" alt="">
+                        <div class="img-container" id="service01">
+                            <img src="img/service101.jpg" class="card-img-top service-iimg" alt="">
+                            <span class="service-item-icon">
+                          <i class="fas fa-hands-wash"></i>
+                        </span>
                         </div>
                         <div class="card-body">
                             <div class="card-text d-flex justify-content-between text-capitalize">
-                                <h5 id="store-item-name">Wash Service</h5>
-                                <h5 class="store-item-value">R<strong id="store-item-price" class="font-weight-bold">50</strong></h5>
+                                <h5 id="service-item-name">full service</h5>
+                                <h5 class="service-item-value">R <strong id="service-item-price" class="font-weight-bold">5</strong></h5>
 
                             </div>
                         </div>
@@ -80,9 +89,159 @@
 
                     </div>
                 </div>
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 service-item sweets" data-item="sweets">
+                    <div class="card ">
+                        <div class="img-container" id="service02">
+                            <img src="img/service101.jpg" class="card-img-top service-iimg" alt="">
+                            <span class="service-item-icon">
+                          <i class="fas fa-hands-wash"></i>
+                        </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>super shine</h5>
+                                <h5 class="service-item-value">R <strong class="font-weight-bold">5</strong></h5>
 
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 service-item sweets" data-item="sweets">
+                    <div class="card ">
+                        <div class="img-container" id="service03">
+                            <img src="img/service101.jpg" class="card-img-top service-iimg" alt="">
+                            <span class="service-item-icon">
+                          <i class="fas fa-hands-wash"></i>
+                        </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>interior wash</h5>
+                                <h5 class="service-item-value">R <strong class="font-weight-bold">5</strong></h5>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 service-item sweets" data-item="sweets">
+                    <div class="card ">
+                        <div class="img-container" id="service04">
+                            <img src="img/service101.jpg" class="card-img-top service-iimg" alt="">
+                            <span class="service-item-icon">
+                          <i class="fas fa-hands-wash"></i>
+                        </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>interior wash plus</h5>
+                                <h5 class="service-item-value">R <strong class="font-weight-bold">5</strong></h5>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 service-item sweets" data-item="sweets">
+                    <div class="card ">
+                        <div class="img-container" id="service05">
+                            <img src="img/service101.jpg" class="card-img-top service-iimg" alt="">
+                            <span class="service-item-icon">
+                          <i class="fas fa-hands-wash"></i>
+                        </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>express exterior</h5>
+                                <h5 class="service-item-value">R <strong class="font-weight-bold">5</strong></h5>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 service-item sweets" data-item="sweets">
+                    <div class="card ">
+                        <div class="img-container" id="service06">
+                            <img src="img/service101.jpg" class="card-img-top service-iimg" alt="">
+                            <span class="service-item-icon">
+                          <i class="fas fa-hands-wash"></i>
+                        </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>wheel wash</h5>
+                                <h5 class="service-item-value">R <strong class="font-weight-bold">5</strong></h5>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 service-item sweets" data-item="sweets">
+                    <div class="card ">
+                        <div class="img-container" id="service07">
+                            <img src="img/service101.jpg" class="card-img-top service-iimg" alt="">
+                            <span class="service-item-icon">
+                          <i class="fas fa-hands-wash"></i>
+                        </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>exterior shine</h5>
+                                <h5 class="service-item-value">R <strong class="font-weight-bold">5</strong></h5>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 service-item sweets" data-item="sweets">
+                    <div class="card ">
+                        <div class="img-container" id="service08">
+                            <img src="img/service101.jpg" class="card-img-top service-iimg" alt="">
+                            <span class="service-item-icon">
+                          <i class="fas fa-hands-wash"></i>
+                        </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>exterior wash</h5>
+                                <h5 class="service-item-value">R <strong class="font-weight-bold">5</strong></h5>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-10 col-sm-6 col-lg-4 mx-auto my-3 service-item sweets" data-item="sweets">
+                    <div class="card ">
+                        <div class="img-container" id="service09">
+                            <img src="img/service101.jpg" class="card-img-top service-iimg" alt="">
+                            <span class="service-item-icon">
+                          <i class="fas fa-hands-wash"></i>
+                        </span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-text d-flex justify-content-between text-capitalize">
+                                <h5>exterior wash plus</h5>
+                                <h5 class="service-item-value">R <strong class="font-weight-bold">5</strong></h5>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
 
