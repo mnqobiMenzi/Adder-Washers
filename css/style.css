@@ -487,10 +487,29 @@ nav #icon {
 }
 
 .service-text {
-    padding-top: 100px;
+    padding-top: 110px;
 }
 
 .our-service-text {
     color: var(--yellowTrans);
     font-family: 'Trade Winds', cursive;
+}
+
+
+/* Appointment */
+
+#calender {
+    width: 100%;
+    height: 100%;
+}
+
+.appointment-header {
+    padding-top: 110px;
+    text-align: center;
+    font-family: 'Trade Winds', cursive;
+}
+
+.calendar {
+    padding-bottom: 5rem;
+    position: static;
 }
